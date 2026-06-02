@@ -1,3 +1,15 @@
+<!-- Project Banner -->
+<p align="center">
+  <img src="Recordings/banner_pixel_path_solver.png" alt="Pixel Path Solver Banner" width="100%">
+</p>
+
+<!-- Project Icon -->
+<p align="center">
+  <img src="Recordings/icon_pixel_path_solver.png" alt="Pixel Path Solver Icon" width="128">
+</p>
+
+# Pixel Path Solver
+
 # Road Network Viewer + Pixel-Based Path Solver
 
 This project provides a set of interactive HTML tools for loading road data,
