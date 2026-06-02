@@ -5,11 +5,20 @@
 
 <!-- Project Icon -->
 <p align="center">
-  
+  <img src="Recordings/Copilot_20260601_224528.png" alt="Pixel Path Solver Icon" width="128">
+</p>
+<h1 align="center">Pixel Path Solver</h1>
+<p align="center">
+  Interactive pixel‑based pathfinding visualizer for road networks, GeoJSON data, and BFS traversal analysis.
 </p>
 
-<img src="Recordings/Copilot_20260601_224528.png" alt="Pixel Path Solver Icon" width="128">
-
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-brightgreen">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue">
+  <img src="https://img.shields.io/badge/license-MIT-yellow">
+  <img src="https://img.shields.io/badge/tech-HTML5%20Canvas-orange">
+  <img src="https://img.shields.io/badge/algorithm-BFS%20%7C%20Pixel%20Traversal-purple">
+</p>
 # Pixel Path Solver
 
 # Road Network Viewer + Pixel-Based Path Solver
@@ -166,6 +175,10 @@ Everything runs in the browser using:
 - JavaScript  
 - GeoJSON parsing  
 
+---
+
+# Screenshots
+<img src="Recordings/Screenshot 2026-06-01 213023.png">
 ---
 
 # ▶️ Running the Tools
