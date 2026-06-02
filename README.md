@@ -1,12 +1,14 @@
 <!-- Project Banner -->
 <p align="center">
-  <img src="Recordings/Copilot_20260601_224526.png" alt="Pixel Path Solver Banner" width="100%">
+  <img src="Recordings/Copilot_20260601_224526.png" alt="Pixel Path Solver Banner" height="200" width="100%">
 </p>
 
 <!-- Project Icon -->
 <p align="center">
-  <img src="Recordings/Copilot_20260601_224528.png" alt="Pixel Path Solver Icon" width="128">
+  
 </p>
+
+<img src="Recordings/Copilot_20260601_224528.png" alt="Pixel Path Solver Icon" width="128">
 
 # Pixel Path Solver
 
