@@ -148,6 +148,72 @@ Together, these four algorithms create a unique ecosystem:
 
 This makes the project a rare blend of **GIS**, **image processing**, and **algorithm visualization**, all running directly in the browser.
 
+## 🔗 Algorithm Architecture Diagram
+
+Below is a high‑level diagram showing how all four algorithms interact inside the
+Pixel Path Solver system. The flow illustrates how GeoJSON data, rasterization,
+pixel traversal, and BFS‑based routing connect together.
+
+
+                         ┌──────────────────────────┐
+                         │      GeoJSON Roads       │
+                         └─────────────┬────────────┘
+                                       │
+                                       ▼
+                         ┌──────────────────────────┐
+                         │   Rasterization Engine   │
+                         │ (Convert roads → pixels) │
+                         └─────────────┬────────────┘
+                                       │
+                                       ▼
+                         ┌──────────────────────────┐
+                         │  Pixel Grid Representation│
+                         │ (Road pixels + neighbors) │
+                         └─────────────┬────────────┘
+                                       │
+             ┌─────────────────────────┼─────────────────────────┐
+             │                         │                         │
+             ▼                         ▼                         ▼
+
+                           ┌────────────────────────┐   
+                           | 1. Pixel-Based Solver  |
+                           │  (Main BFS Routing)    │
+                           │ 2. Longest-White-Path  │   
+                           │     (Corridor Scan)    |
+                           │ 3. Grid-Based Traversal│
+                           │   (Neighbor Explorer)  │
+                           └────────────┬───────────┘  
+           │                             │                            │
+           │                             │                            │
+           ▼                             ▼                            ▼
+
+      ┌──────────────────────────────────────────────────────────────────┐
+      │         Shared Pixel-Level Operations & Connectivity             │
+      │  - 4/8/16-direction neighbors                                    │
+      │  - Valid pixel filtering                                         │
+      │  - White-pixel continuity                                        │
+      │  - Road-pixel constraints                                        │
+      └──────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+                         ┌──────────────────────────┐
+                         │  4. 16-Direction BFS     │
+                         │ (Wavefront + Path Stats) │
+                         └─────────────┬────────────┘
+                                       │
+                                       ▼
+                         ┌──────────────────────────┐
+                         │   Path Reconstruction    │
+                         │ (Gold final path output) │
+                         └─────────────┬────────────┘
+                                       │
+                                       ▼
+                         ┌──────────────────────────┐
+                         │ Visualization Layer      │
+                         │ - Wavefront animation    │
+                         │ - Start/target snapping  │
+                         │ - Metrics & compass      │
+                         └──────────────────────────┘
 ---
 
 # 📄 HTML Tools
